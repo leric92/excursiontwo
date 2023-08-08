@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero  {
+    display: grid;
+    grid-template: repeat(13, 1fr) / repeat(10, 1fr);
+}
+
+.hero .heading {
+    grid-area: 2 / 1 / 5 / 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .heading h1 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.hero .heading a {
+    color: aquamarine;
+    font-size: 1rem;
+}
+
+
+
+
+.hero .video {
+    grid-area: 6 / 3 / 14 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
