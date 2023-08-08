@@ -45,3 +45,36 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+.travel {
+    display: grid;
+    grid-template: repeat(13, 1fr) / repeat(10, 1fr);
+}
+
+.travel .travel-head {
+    grid-area: 2 / 1 / 5 / 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.travel .travel-head h3 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.travel .travel-head p{
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.travel .image-container {
+    grid-area: 6 / 3 / 14 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
